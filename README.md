@@ -1,7 +1,7 @@
 
-Neocoin: The New Economy
+Neocoin development tree
 
-Neocoin, the fuel of the NeoBITZ Ecosphere (economic sphere) platform, is a secure, simple and fast hybrid PoW+PoS cryptocurrency.
+Neocoin is a PoS-based cryptocurrency.
 
 Development process
 ===========================

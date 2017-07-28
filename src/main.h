@@ -31,7 +31,7 @@ class CTxMemPool;
 static const int LAST_POW_BLOCK = 700000;
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
-static const unsigned int MAX_BLOCK_SIZE = 7000000;
+static const unsigned int MAX_BLOCK_SIZE = 1000000;
 /** The maximum size for mined blocks */
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
 /** The maximum size for transactions we're willing to relay/mine **/
@@ -47,15 +47,15 @@ static const int64_t MIN_TX_FEE = 10000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 77000000 * COIN;
+static const int64_t MAX_MONEY = 70000000 * COIN;
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
 static const int64_t COIN_YEAR_REWARD = 77 * CENT;
 
-static const uint256 hashGenesisBlock("0x00000501cad337c6135983b31b791afcbbcb6b367a55c14d2dfbfef40e0d53d7");
-static const uint256 hashGenesisBlockTestNet("0x00000501cad337c6135983b31b791afcbbcb6b367a55c14d2dfbfef40e0d53d7");
+static const uint256 hashGenesisBlock("0x000009b4cd0d34a274f9c9ec6245b6dc4b394225cfb5e3c7462e022df56d7f6c");
+static const uint256 hashGenesisBlockTestNet("0x000009b4cd0d34a274f9c9ec6245b6dc4b394225cfb5e3c7462e022df56d7f6c");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 10 * 60; } // up to 10 minutes from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 10 * 60; } // up to 10 minutes from the future
